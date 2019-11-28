@@ -1,18 +1,18 @@
 $(function(){
   function buildHTML(message){
-    var image = message.image ? `<img class=“lower-message__image” src=“${message.image}” >` : "";
+    var image = message.image ? `<img class="lower-message__image" src="${message.image}" >` : "";
     var html =
-        `<div class=“message” data-message-id=${message.id}>
-            <div class=“upper-message”>
-              <div class=“upper-message__user-name”>
+        `<div class="message" data-message-id=${message.id}>
+            <div class="upper-message">
+              <div class="upper-message__user-name">
               ${message.user_name}
             </div>
-              <div class=“upper-message__date”>
+              <div class="upper-message__date">
               ${message.date}
             </div>
             </div>
-            <div class=“lower-message”>
-              <p class=“lower-message__content”>
+            <div class="lower-message">
+              <p class="lower-message__content">
               ${message.content}
               </p>
               ${image}
